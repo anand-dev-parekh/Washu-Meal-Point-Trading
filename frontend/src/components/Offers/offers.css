@@ -1,0 +1,115 @@
+.offers-container {
+    text-align: center;
+} 
+.offers-list {
+    text-align: left;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.offer-card-meal-points {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.offer-card-email {
+    font-size: 14px;
+    margin: 0;
+}
+
+.offer-card-actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.offer-card-edit-input {
+    width: 64px;
+    margin-right: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.offer-card-report-input {
+    width:  256px;
+    margin-right: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+.offer-card-edit-button {
+    background-color: #06874a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+  
+.offer-card-delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+  
+.logout-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.logout-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.create-offer-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+.create-offer-input {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.create-offer-button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.create-offer-button:hover {
+    background-color: #444;
+}
+  
