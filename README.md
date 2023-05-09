@@ -1,5 +1,5 @@
 # Washu-Meal-Point-Trading
-Website to trade meal points at Washington University in St Louis (Washu)
+Full stack web application to trade meal points at Washington University in St Louis (Washu)
 
 
 ---
@@ -17,13 +17,18 @@ At Washington University in St Louis (Washu), many students are above and below 
 ---
 ## Test Locally 
 *** Make sure to have Node.js, npm, and go installed before continuing
-1) Install node modules and run frontend
+1) clone repo
+```console
+git clone https://github.com/anand-dev-parekh/Washu-Meal-Point-Trading.git
+cd Washu-Meal-Point-Trading
+```
+2) Install node modules and run frontend
 ```console
 cd frontend
 npm install
 npm run dev
 ```
-2) Install go modules and run backend
+3) Install go modules and run backend
 ```console
 cd backend
 go mod download
