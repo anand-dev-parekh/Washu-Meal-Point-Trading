@@ -22,13 +22,20 @@ At Washington University in St Louis (Washu), many students are above and below 
 git clone https://github.com/anand-dev-parekh/Washu-Meal-Point-Trading.git
 cd Washu-Meal-Point-Trading
 ```
-2) Install node modules and run frontend
+2) Set Environment Variables frontend
+    a) .env file contains localhost:8000 for base url api
+
+3) Set Environment Variables backend
+    a) DBUSER and DBPASS for MySQL user and password
+    b) EMAILPASS for gmail app password
+
+4) Install node modules and run frontend
 ```console
 cd frontend
 npm install
 npm run dev
 ```
-3) Install go modules and run backend
+5) Install go modules and run backend
 ```console
 cd backend
 go mod download
