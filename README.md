@@ -5,7 +5,6 @@ Website to trade meal points at Washington University in St Louis (Washu)
 
 
 ## Background
----
 At Washington University in St Louis (Washu), many students are above and below on meal points. This website allows students to connect with other students to trade meal points!
 
 ## Improvements
