@@ -4,7 +4,7 @@ Full stack web application to trade meal points at Washington University in St L
 
 ---
 ## Background
-At Washington University in St Louis (Washu), many students are above and below on meal points. This website allows students to connect with other students to trade meal points!
+At Washington University in St Louis (Washu), many students are above and below on meal points near the end of the semester. This website allows students to connect with other students to trade meal points!
 
 
 ---
