@@ -13,7 +13,7 @@ const EmailVerify = () => {
     };
 
     //send confirmation email thru put request
-    axios.put("http://localhost:8080/send-confirmation-email", {}, {headers})
+    axios.put(process.env.API_BASE_URL + "/send-confirmation-email", {}, {headers})
       .then((response) => {
         alert("Sent verification email")
       })

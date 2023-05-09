@@ -29,7 +29,7 @@ const Register = () => {
     };
 
     //make post request to create user
-    axios.post("http://localhost:8080/create-user", data, {headers})
+    axios.post(process.env.API_BASE_URL + "/create-user", data, {headers})
     .then((response) => { 
       navigate('/login')
    })

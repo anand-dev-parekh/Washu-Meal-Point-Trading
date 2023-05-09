@@ -23,7 +23,7 @@ const Login = () => {
     };
     
     //get jwt token
-    axios.post("http://localhost:8080/generate-token", data, {headers})
+    axios.post(process.env.API_BASE_URL + "/generate-token", data, {headers})
      .then((response) => { 
         localStorage.setItem("token", response.data.token) //maybe change later?
         localStorage.setItem("userID", response.data.userID) 

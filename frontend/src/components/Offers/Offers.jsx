@@ -31,7 +31,7 @@ const Offers = () => {
       }
 
       //post request to report a user
-      axios.post("http://localhost:8080/secure/report-user", data, {headers})
+      axios.post(process.env.API_BASE_URL + "/secure/report-user", data, {headers})
         .then((response) => {
           alert(response.data.response)
         })
@@ -51,7 +51,7 @@ const Offers = () => {
         }
 
         //post request to create offer
-        axios.post("http://localhost:8080/secure/create-offer", data, {headers})
+        axios.post(process.env.API_BASE_URL + "/secure/create-offer", data, {headers})
           .then(() => {
             window.location.reload()
           })
@@ -74,7 +74,7 @@ const Offers = () => {
         };
 
         //put request to update certain offer
-        axios.put("http://localhost:8080/secure/update-offer", data, {headers})
+        axios.put(process.env.API_BASE_URL + "/secure/update-offer", data, {headers})
           .then(() => {
             const newOffers = [...offers]
             newOffers[index].mealPoints = parseInt(editOfferButton.value) 
@@ -96,7 +96,7 @@ const Offers = () => {
             offerID: parseInt(offerID),
         };
         
-        axios.delete("http://localhost:8080/secure/delete-offer", {headers, data})
+        axios.delete(process.env.API_BASE_URL + "/secure/delete-offer", {headers, data})
           .then(() => {
             const newOffers = [...offers]
             newOffers.splice(index, 1)
@@ -114,7 +114,7 @@ const Offers = () => {
         };
         
         //get request to get offers, run on init of webpage
-        axios.get("http://localhost:8080/secure/get-offers", {headers})
+        axios.get(process.env.API_BASE_URL + "/secure/get-offers", {headers})
           .then((response) => { 
             setOffers(response.data.offers)
           })

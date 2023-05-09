@@ -20,7 +20,7 @@ const Reports = () => {
         }
         
         //put request to ban user
-        axios.put("http://localhost:8080/admin/ban-user", data, {headers})
+        axios.put(process.env.API_BASE_URL + "/admin/ban-user", data, {headers})
         .then((response) => { 
             alert(response.data.body)
         })
@@ -42,7 +42,7 @@ const Reports = () => {
        };
    
        //get request on initial load to get reports
-       axios.get("http://localhost:8080/admin/get-reports", {headers})
+       axios.get(process.env.API_BASE_URL + "/admin/get-reports", {headers})
          .then((response) => { 
            setReports(response.data.reports)
          })
